@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import SearchPage from "./pages/SearchPage";
 import CoinPage from "./pages/CoinPage";
 import PrivateRoute from "./components/PrivateRoute";
+import ThemeBtn from "./components/ThemeBtn";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
+      <ThemeBtn />
       <ToastContainer />
     </Router>
   );

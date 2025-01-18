@@ -7,7 +7,7 @@ import { loginUser } from "../features/auth/authSlice";
 import Loading from "../components/Loading";
 
 const Login = () => {
-  let theme = true;
+  const { theme } = useSelector((state) => state.theme);
 
   const { user, isLoading, isError, message, isSuccess } = useSelector(
     (state) => state.auth

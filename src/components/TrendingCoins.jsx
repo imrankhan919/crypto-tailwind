@@ -11,7 +11,7 @@ const TrendingCoins = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    // dispatch(getTrendingCoins());
+    dispatch(getTrendingCoins());
   }, []);
 
   if (isLoading) {

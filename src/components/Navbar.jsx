@@ -5,7 +5,7 @@ import { logOutUser } from "../features/auth/authSlice";
 
 const Navbar = () => {
   const { user } = useSelector((state) => state.auth);
-  let theme = true;
+  const { theme } = useSelector((state) => state.theme);
 
   const { cartItems } = useSelector((state) => state.cart);
 

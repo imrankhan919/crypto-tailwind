@@ -4,7 +4,7 @@ import BillCard from "../components/BillCard";
 import { useSelector } from "react-redux";
 
 const Cart = () => {
-  let theme = true;
+  const { theme } = useSelector((state) => state.theme);
 
   const { cartItems } = useSelector((state) => state.cart);
 

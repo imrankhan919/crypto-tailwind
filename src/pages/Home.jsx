@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import Loading from "../components/Loading";
 
 const Home = () => {
-  let theme = true;
+  const { theme } = useSelector((state) => state.theme);
 
   const { isError, message, user } = useSelector((state) => state.auth);
 
